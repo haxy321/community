@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @Controller
-public class HelloController {
+public class IndenController {
 
-    @GetMapping("/hello")
-    public String hello(@RequestParam(name = "name") String name, Model model) {
-        model.addAttribute("name", name);
-        return "hello";
+    @GetMapping("/")
+    public String hello() {
+        return "index";
     }
 
 
